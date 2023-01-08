@@ -18,3 +18,12 @@ RSpec.describe Item do
         end
     end
 end
+
+RSpec.describe Attendee do
+    describe "#initialize" do 
+        it "exists" do
+            attendee = Attendee.new(name: 'Megan', budget: '$50')
+            expect(attendee).to be_instance_of(Attendee)
+        end
+    end
+end
