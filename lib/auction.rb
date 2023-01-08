@@ -32,4 +32,12 @@ class Auction
         end
         total_revenue
     end
+
+    def bidders
+        bidders = []
+        @items.each do |item|
+            bidders.concat(item.bids.keys)
+        end
+        bidders.uniq
+    end
 end
