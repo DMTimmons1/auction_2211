@@ -34,3 +34,12 @@ RSpec.describe Attendee do
         end
     end
 end
+
+RSpec.describe Auction do
+    describe "#initialize" do 
+        it "exists" do
+            auction = Auction.new
+            expect(auction).to be_instance_of(Auction)
+        end
+    end
+end
